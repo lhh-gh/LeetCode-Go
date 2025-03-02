@@ -6,7 +6,6 @@ func twoSum(nums []int, target int) []int {
 	for i, v := range nums {
 		//如果当前元素 v 没有找到配对，则将其及其索引 i 存入哈希表 m 中
 		if j, ok := m[target-v]; ok {
-
 			return []int{j, i}
 		}
 		m[v] = i
